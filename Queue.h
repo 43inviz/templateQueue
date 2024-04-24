@@ -12,8 +12,8 @@ class Queue
 
 public:
 	
-	Queue(int size,T* queue);
-	Queue() :Queue{ 0,nullptr }{}
+	Queue(int size);
+	
 	~Queue();
 	bool isFull();
 	bool isEmpty();
@@ -25,14 +25,12 @@ public:
 };
 
 template<typename T>
-inline Queue<T>::Queue(int size, T* queue)
+inline Queue<T>::Queue(int size)
 {
 	this->capacity = size + 5;
 	this->size = 0;
 	this->queue = new T[capacity];
-	for (int i = 0; i < capacity; i++) {
-		this->queue[i] = queue[i];
-	}
+	
 }
 
 template<typename T>

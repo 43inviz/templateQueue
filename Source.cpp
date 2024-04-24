@@ -20,7 +20,7 @@ int main() {
 		arr[i] = rand() % 10 + 1;
 	}
 
-	Queue<int> que1 (size,arr);
+	Queue<int> que1 (size);
 
 	int choice;
 	int deqRes;
