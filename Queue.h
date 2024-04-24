@@ -28,7 +28,7 @@ template<typename T>
 inline Queue<T>::Queue(int size, T* queue)
 {
 	this->capacity = size + 5;
-	this->size = size;
+	this->size = 0;
 	this->queue = new T[capacity];
 	for (int i = 0; i < capacity; i++) {
 		this->queue[i] = queue[i];
@@ -64,7 +64,7 @@ inline bool Queue<T>::isEmpty()
 template<typename T>
 inline int Queue<T>::getSize()
 {
-	return this->size;
+	return this->size+1;
 }
 
 template<typename T>
