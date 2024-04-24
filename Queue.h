@@ -19,7 +19,7 @@ public:
 	bool isEmpty();
 	int getSize();
 	void Enqueue(T val);
-	T Dequeue();
+	T dequeue();
 
 	void show();
 };
