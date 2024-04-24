@@ -88,7 +88,7 @@ inline void Queue<T>::Enqueue(T val)
 }
 
 template<typename T>
-inline T Queue<T>::Dequeue()
+inline T Queue<T>::dequeue()
 {
 	T result = 0;
 
