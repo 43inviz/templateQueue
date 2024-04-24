@@ -14,11 +14,6 @@ int main() {
 	srand(time(0));
 	int size = 5;
 
-	int* arr = new int[size];
-
-	for (int i = 0; i < size; i++) {
-		arr[i] = rand() % 10 + 1;
-	}
 
 	Queue<int> que1 (size);
 
@@ -41,7 +36,7 @@ int main() {
 			cout << "\n Element added!\n";
 			break;
 		case 2:
-			deqRes = que1.Dequeue();
+			deqRes = que1.dequeue();
 			cout << deqRes << endl;
 			break;
 		case 3:
